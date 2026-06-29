@@ -1,0 +1,9 @@
+# Ignore vs code settings
+.vscode/
+.vs/
+
+# Ignore devcontainer files
+.devcontainer/
+
+# Ignore docs (for now)
+docs/
