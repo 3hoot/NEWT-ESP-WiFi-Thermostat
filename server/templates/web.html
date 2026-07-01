@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEWT - ESP WiFi Thermostat</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <header class="top-bar">
+            <div>
+                <p class="project-label">ESP32-MINI · PID CONTROL</p>
+                <h1>NEWT Thermostat</h1>
+            </div>
+
+            <div class="connection-status">
+                <span class="status-dot"></span>
+                Online
+            </div>
+        </header>
+
+        <section class="temperature-panel">
+
+            <div class="temperature-card current-temperature">
+                <p class="card-label">Current Temperature</p>
+
+                <div class="temperature-value">
+                    21.4<span>°C</span>
+                </div>
+
+                <p class="sensor-info">Temperature sensor reading</p>
+            </div>
+
+            <div class="temperature-card setpoint-temperature">
+                <p class="card-label">Target Temperature</p>
+
+                <div class="temperature-value target">
+                    22.0<span>°C</span>
+                </div>
+
+                <p class="sensor-info">User-defined setpoint</p>
+            </div>
+
+        </section>
+
+        <section class="control-panel">
+
+            <div class="panel-heading">
+                <h2>Set Temperature</h2>
+                <p>Choose the target value for the PID controller.</p>
+            </div>
+
+            <form method="post" action="/" class="setpoint-form">
+
+                <label for="setpoint">Target temperature [°C]</label>
+
+                <div class="input-row">
+                    <input
+                        type="number"
+                        id="setpoint"
+                        name="setpoint"
+                        min="5"
+                        max="35"
+                        step="0.5"
+                        value="22.0"
+                    >
+
+                    <button type="submit">Save Settings</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="system-panel">
+
+            <div class="system-item">
+                <p class="system-label">Operating Mode</p>
+                <p class="system-value">Heating</p>
+            </div>
+
+            <div class="system-item">
+                <p class="system-label">Controller Output</p>
+                <p class="system-value active-output">LED / Heating ON</p>
+            </div>
+
+            <div class="system-item">
+                <p class="system-label">Controller</p>
+                <p class="system-value">PID Active</p>
+            </div>
+
+        </section>
+
+        <footer>
+            NEWT - ESP WiFi Thermostat · Mechatronics Lab
+        </footer>
+
+    </main>
+
+</body>
+</html>

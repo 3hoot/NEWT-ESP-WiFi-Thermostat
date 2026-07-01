@@ -1,7 +1,7 @@
 import threading
 import socket
 import json
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, send_from_directory
 
 # --- Configuration ---
 HOST = '0.0.0.0'
@@ -16,7 +16,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Simple HTML template served directly
-    return render_template('index.html')
+    return render_template('web.html')
 
 
 def run_web_server():
