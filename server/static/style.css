@@ -75,13 +75,6 @@ h1 {
     padding: 28px;
 }
 
-.current-temperature {
-    border-left: 6px solid #4d9db8;
-}
-
-.setpoint-temperature {
-    border-left: 6px solid #f0a54b;
-}
 
 .card-label,
 .system-label {
