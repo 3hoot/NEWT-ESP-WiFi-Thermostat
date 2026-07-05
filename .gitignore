@@ -11,3 +11,4 @@ docs/
 # Python cache files and environments
 __pycache__/
 venv/
+.venv
