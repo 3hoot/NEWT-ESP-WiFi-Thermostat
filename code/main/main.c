@@ -6,11 +6,9 @@
 // ESP-IDF headers
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "freertos/event_groups.h"
 
 #include "esp_log.h"
 #include "esp_system.h" // System initialization and management
-#include "esp_event.h"  // Event loop library (like an interrupt but for software events)
 #include "nvs_flash.h"  // NVS initialization
 
 // User defined headers
